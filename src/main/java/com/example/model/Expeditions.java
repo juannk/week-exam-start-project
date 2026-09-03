@@ -13,6 +13,7 @@ public class Expeditions {
     private String Estate;
     private List<Sightings> sightings;
 
+
     public Expeditions(Integer id, String name, String baseCamp, String region, String leader, String startDate, String endDate, String estate) {
         Id = id;
         Name = name;

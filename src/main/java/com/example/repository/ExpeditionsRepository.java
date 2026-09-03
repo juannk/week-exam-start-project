@@ -2,14 +2,22 @@ package com.example.repository;
 
 import com.example.model.Expeditions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ExpeditionsRepository {
 
-    public ExpeditionsRepository(List<Expeditions> expeditions) {
-        this.expeditions = expeditions;
+    private List<Expeditions> expeditions;
+
+    public ExpeditionsRepository() {
+        this.expeditions = new ArrayList<>();
+    }
+    public List<Expeditions> getExpeditions() {
+        return expeditions;
     }
 
-    private List<Expeditions> expeditions;
+    public void addExpedition(Expeditions expedition) {
+        expeditions.add(expedition);
+    }
 
 }
