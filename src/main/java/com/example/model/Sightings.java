@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class sightings {
+public class Sightings {
 
     private Integer Id;
 
@@ -13,8 +13,9 @@ public class sightings {
     private Integer Quantity;
     private Integer ConfidenceLevel;
     private Integer ExpeditionId;
+    private Integer expeditionId;
 
-    public sightings(Integer id, Integer expeditionId, Integer confidenceLevel, Integer quantity, String location, String scientificName, String sightedAt, String name, String description, String sightingCode) {
+    public Sightings(Integer id, Integer expeditionId, Integer confidenceLevel, Integer quantity, String location, String scientificName, String sightedAt, String name, String description, String sightingCode) {
         Id = id;
         ExpeditionId = expeditionId;
         ConfidenceLevel = confidenceLevel;

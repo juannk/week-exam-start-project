@@ -4,4 +4,31 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+
+    <bean id="expedienteRepository"
+      class="com.example.repository.ExpeditionsRepository"/>
+
+    <bean id="sightingsRepository"
+      class="com.example.repository.SightingsRepository"/>
+
+
+
+    <bean id="expeditionService"
+      class="com.example.service.ExpeditionService">
+
+        <constructor-arg ref="expeditionsRepository"/>
+
+    </bean>
+
+
+    <bean id="sightingsService"
+      class="com.example.service.SightingsService">
+
+        <constructor-arg ref="sightingsRepository"/>
+
+    </bean>
+    <bean id="expeditionsRepository"/>
+
 </beans>
+
